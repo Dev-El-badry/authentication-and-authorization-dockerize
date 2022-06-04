@@ -1,0 +1,10 @@
+{
+  "MODULE": "permissions",
+  "PERMISSIONS": {
+    "PERMISSION_INDEX": {
+      "name": "Permissions List",
+      "method": "GET",
+      "ability": "/"
+    }
+  }
+}

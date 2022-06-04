@@ -1,0 +1,53 @@
+{
+  "name": "authentication-and-authorization",
+  "version": "1.0.0",
+  "description": "dockerize Authentication And Authorization",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev src/index.ts",
+    "test": "NODE_ENV=test jest --watchAll --no-cache",
+
+    "permission:delete": "ts-node-dev dev-data/seeding-permission --delete",
+    "permission:import": "ts-node-dev dev-data/seeding-permission --import"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/compression": "^1.7.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cookie-session": "^2.0.44",
+    "@types/helmet": "^4.0.0",
+    "@types/hpp": "^0.2.2",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.3",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "concurrently": "^7.2.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^6.4.0",
+    "express-validator": "^6.14.1",
+    "helmet": "^5.1.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.14",
+    "morgan": "^1.10.0",
+    "redis": "^4.1.0",
+    "ts-node-dev": "^2.0.0-0",
+    "typescript": "^4.7.2",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/supertest": "^2.0.12",
+    "jest": "^27.5.1",
+    "mongodb-memory-server": "^6.9.6",
+    "supertest": "^4.0.2",
+    "ts-jest": "^27.1.5"
+  }
+}

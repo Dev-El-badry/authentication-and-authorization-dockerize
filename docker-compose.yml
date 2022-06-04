@@ -1,0 +1,32 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    restart: always
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+
+  nginx:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "3050:80"
+  redis:
+    image: 'redis:latest'
+  app:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./app
+    environment:
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN}
+      MONGO_URI: mongodb://root:root@mongo:27017/
+    volumes:
+      - /app/node_modules
+      - ./app:/app

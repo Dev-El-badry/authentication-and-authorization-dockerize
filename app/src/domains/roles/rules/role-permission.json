@@ -1,0 +1,30 @@
+{
+  "MODULE": "roles",
+  "PERMISSIONS": {
+    "ROLE_INDEX": {
+      "name": "Role List",
+      "method": "GET",
+      "ability": "/"
+    },
+    "SHOW_ROLE": {
+      "name": "Show Role",
+      "method": "GET",
+      "ability": "/show/:id"
+    },
+    "CREATE_ROLE": {
+      "name": "Create Role",
+      "method": "POST",
+      "ability": "/"
+    },
+    "UPDATE_ROLE": {
+      "name": "Update Role",
+      "method": "PUT",
+      "ability": "/"
+    },
+    "DELETE_ROLE": {
+      "name": "Delete Role",
+      "method": "DELETE",
+      "ability": "/:id"
+    }
+  }
+}

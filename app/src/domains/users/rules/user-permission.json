@@ -1,0 +1,15 @@
+{
+  "MODULE": "users",
+  "PERMISSIONS": {
+    "USER_INDEX": {
+      "name": "Users List",
+      "method": "GET",
+      "ability": "/"
+    },
+    "ASSIGN_ROLE": {
+      "name": "Assign Roles",
+      "method": "POST",
+      "ability": "/role"
+    }
+  }
+}
