@@ -1,5 +1,13 @@
 # Design API For Authentication And Authorization Service
 
+<div align="center">
+  <strong >Authentication And Authorization Service ERD</strong>
+</div>
+
+
+<img align="right" src="https://i.imgur.com/k8csc4r.png" alt="ERD usage" />
+
+
 ## Usage
 
 To get started, make sure you have Docker installed on your system, and then clone this repository.
@@ -45,26 +53,23 @@ Next, navigate in your terminal to the directory you cloned this, run command be
 
 ## Authentication
 
-- [x] Login
+- [x] Sign In
+- [x] Sign Up
 - [x] Me
 - [x] Logout
-- [x] Deposit
-- [x] Reset Deposit
 
-## Lines
+## Users
+- [x] get all users
+- [x] assign role to user 
 
-- [x] Create
-- [x] Update
-- [x] Delete
-- [x] Show
-
-## Products
+## Roles
 
 - [x] Create
 - [x] Update
 - [x] Delete
 - [x] Show
 
-## Orders
+## Permissinos
 
-- [x] Buy item
+- [x] get all permissions
+
